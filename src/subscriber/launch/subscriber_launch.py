@@ -13,10 +13,4 @@ def generate_launch_description():
             executable='subs',
             name='subscriber_node'
         ),
-
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('publisher'),  'launch', 'publisher_launch.py')
-            )
-        ),
     ])
